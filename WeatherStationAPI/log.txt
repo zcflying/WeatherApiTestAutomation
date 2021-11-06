@@ -1,0 +1,33 @@
+Request method:	POST
+Request URI:	http://api.openweathermap.org/data/3.0/stations?appid=12345
+Proxy:			<none>
+Request params:	<none>
+Query params:	appid=12345
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "external_id": "CZ_TEST001",
+    "name": "Chun Zhang Test Station 001",
+    "latitude": 33.33,
+    "longitude": -122.43,
+    "altitude": 222.0
+}
+HTTP/1.1 401 Unauthorized
+Server: openresty
+Date: Sat, 06 Nov 2021 10:07:48 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 107
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE
+
+{
+    "cod": 401,
+    "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."
+}
