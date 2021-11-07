@@ -1,20 +1,20 @@
 package pojo;
 
 public class GetStationResponse {
-	 private float altitude;
+	 private double altitude;
 	 private String updated_at;
-	 private float latitude;
+	 private double latitude;
 	 private String name;
 	 private String created_at;
-	 private float rank;
+	 private double rank;
 	 private String external_id;
 	 private String id;
-	 private float longitude;
+	 private double longitude;
 
 
 	 // Getter Methods 
 
-	 public float getAltitude() {
+	 public double getAltitude() {
 	  return altitude;
 	 }
 
@@ -22,7 +22,7 @@ public class GetStationResponse {
 	  return updated_at;
 	 }
 
-	 public float getLatitude() {
+	 public double getLatitude() {
 	  return latitude;
 	 }
 
@@ -34,7 +34,7 @@ public class GetStationResponse {
 	  return created_at;
 	 }
 
-	 public float getRank() {
+	 public double getRank() {
 	  return rank;
 	 }
 
@@ -46,13 +46,13 @@ public class GetStationResponse {
 	  return id;
 	 }
 
-	 public float getLongitude() {
+	 public double getLongitude() {
 	  return longitude;
 	 }
 
 	 // Setter Methods 
 
-	 public void setAltitude(float altitude) {
+	 public void setAltitude(double altitude) {
 	  this.altitude = altitude;
 	 }
 
@@ -60,7 +60,7 @@ public class GetStationResponse {
 	  this.updated_at = updated_at;
 	 }
 
-	 public void setLatitude(float latitude) {
+	 public void setLatitude(double latitude) {
 	  this.latitude = latitude;
 	 }
 
@@ -72,7 +72,7 @@ public class GetStationResponse {
 	  this.created_at = created_at;
 	 }
 
-	 public void setRank(float rank) {
+	 public void setRank(double rank) {
 	  this.rank = rank;
 	 }
 
@@ -84,7 +84,7 @@ public class GetStationResponse {
 	  this.id = id;
 	 }
 
-	 public void setLongitude(float longitude) {
+	 public void setLongitude(double longitude) {
 	  this.longitude = longitude;
 	 }
 }

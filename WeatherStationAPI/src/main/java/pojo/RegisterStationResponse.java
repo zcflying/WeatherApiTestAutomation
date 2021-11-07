@@ -10,15 +10,15 @@ public class RegisterStationResponse {
 	 private String user_id;
 	 private String external_id;
 	 private String name;
-	 private float latitude;
-	 private float longitude;
-	 private float altitude;
-	 private float rank;
-	 private float source_type;
+	 private double latitude;
+	 private double longitude;
+	 private double altitude;
+	 private int rank;
+	 private int source_type;
 
 	 // Getter Methods 
 
-	 public float getAltitude() {
+	 public double getAltitude() {
 	  return altitude;
 	 }
 
@@ -30,7 +30,7 @@ public class RegisterStationResponse {
 	  return user_id;
 	 }
 
-	 public float getLatitude() {
+	 public double getLatitude() {
 	  return latitude;
 	 }
 
@@ -42,7 +42,7 @@ public class RegisterStationResponse {
 	  return created_at;
 	 }
 
-	 public float getRank() {
+	 public int getRank() {
 	  return rank;
 	 }
 
@@ -50,7 +50,7 @@ public class RegisterStationResponse {
 	  return external_id;
 	 }
 
-	 public float getSource_type() {
+	 public int getSource_type() {
 	  return source_type;
 	 }
 
@@ -58,13 +58,13 @@ public class RegisterStationResponse {
 	  return iD;
 	 }
 
-	 public float getLongitude() {
+	 public double getLongitude() {
 	  return longitude;
 	 }
 
 	 // Setter Methods 
 
-	 public void setAltitude(float altitude) {
+	 public void setAltitude(double altitude) {
 	  this.altitude = altitude;
 	 }
 
@@ -76,7 +76,7 @@ public class RegisterStationResponse {
 	  this.user_id = user_id;
 	 }
 
-	 public void setLatitude(float latitude) {
+	 public void setLatitude(double latitude) {
 	  this.latitude = latitude;
 	 }
 
@@ -88,7 +88,7 @@ public class RegisterStationResponse {
 	  this.created_at = created_at;
 	 }
 
-	 public void setRank(float rank) {
+	 public void setRank(int rank) {
 	  this.rank = rank;
 	 }
 
@@ -96,7 +96,7 @@ public class RegisterStationResponse {
 	  this.external_id = external_id;
 	 }
 
-	 public void setSource_type(float source_type) {
+	 public void setSource_type(int source_type) {
 	  this.source_type = source_type;
 	 }
 
@@ -104,7 +104,7 @@ public class RegisterStationResponse {
 	  this.iD = ID;
 	 }
 
-	 public void setLongitude(float longitude) {
+	 public void setLongitude(double longitude) {
 	  this.longitude = longitude;
 	 }
 }

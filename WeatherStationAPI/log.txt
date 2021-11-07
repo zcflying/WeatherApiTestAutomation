@@ -1,8 +1,8 @@
 Request method:	POST
-Request URI:	http://api.openweathermap.org/data/3.0/stations?appid=12345
+Request URI:	http://api.openweathermap.org/data/3.0/stations?appid=a3daa7904358f635635cace42353bae4
 Proxy:			<none>
 Request params:	<none>
-Query params:	appid=12345
+Query params:	appid=a3daa7904358f635635cace42353bae4
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -11,23 +11,23 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "external_id": "CZ_TEST001",
-    "name": "Chun Zhang Test Station 001",
+    "external_id": "DEMO_TEST004",
+    "name": "Team Demo Test Station 004",
     "latitude": 33.33,
-    "longitude": -122.43,
+    "longitude": -180.00001,
     "altitude": 222.0
 }
-HTTP/1.1 401 Unauthorized
+HTTP/1.1 400 Bad Request
 Server: openresty
-Date: Sat, 06 Nov 2021 10:07:48 GMT
+Date: Sun, 07 Nov 2021 00:20:28 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 107
+Content-Length: 69
 Connection: keep-alive
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Methods: GET, POST, PUT, DELETE
 
 {
-    "cod": 401,
-    "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."
+    "code": 400001,
+    "message": "Station longitude should be in (-180:180)"
 }

@@ -3,9 +3,9 @@ package pojo;
 public class RegisterStationRequest {
 	 private String external_id;
 	 private String name;
-	 private float latitude;
-	 private float longitude;
-	 private float altitude;
+	 private double latitude;
+	 private double longitude;
+	 private double altitude;
 
 
 	 // Getter Methods 
@@ -18,15 +18,15 @@ public class RegisterStationRequest {
 	  return name;
 	 }
 
-	 public float getLatitude() {
+	 public double getLatitude() {
 	  return latitude;
 	 }
 
-	 public float getLongitude() {
+	 public double getLongitude() {
 	  return longitude;
 	 }
 
-	 public float getAltitude() {
+	 public double getAltitude() {
 	  return altitude;
 	 }
 
@@ -40,19 +40,19 @@ public class RegisterStationRequest {
 	  this.name = name;
 	 }
 
-	 public void setLatitude(float latitude) {
+	 public void setLatitude(double latitude) {
 	  this.latitude = latitude;
 	 }
 
-	 public void setLongitude(float longitude) {
+	 public void setLongitude(double longitude) {
 	  this.longitude = longitude;
 	 }
 
-	 public void setAltitude(float altitude) {
+	 public void setAltitude(double altitude) {
 	  this.altitude = altitude;
 	 }
 	 
-	public RegisterStationRequest(String id, String name,float latitude,float longitude,float altitude) {
+	public RegisterStationRequest(String id, String name,double latitude,double longitude,double altitude) {
 			this.external_id = id;
 			this.name = name;
 			this.latitude = latitude;
